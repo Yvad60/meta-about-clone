@@ -7,25 +7,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/index.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./styles/output.css">
   <title>Meta | Social Metaverse Company</title>
 </head>
 
 <body>
   <header class="sticky top-0 z-50 bg-white py-2">
-    <div class="flex px-5 py-3 justify-between items-center ">
-      <nav>
+    <div class="flex px-5 py-3 lg:px-12 justify-between items-center ">
+      <nav class="lg:hidden">
         <i class="bi bi-list text-3xl font-bold"></i>
       </nav>
-      <nav>
+      <nav class="lg:hidden">
         <img class="w-[89px]"
           src="https://scontent.fnbo1-1.fna.fbcdn.net/v/t39.8562-6/252294889_575082167077436_6034106545912333281_n.svg/meta-logo-primary_standardsize.svg?_nc_cat=1&ccb=1-7&_nc_sid=ad8a9d&_nc_ohc=GKJNnMmdfbUAX9ZZWZK&_nc_ht=scontent.fnbo1-1.fna&oh=00_AT_fHzGF-EfZMDZwDLuVbYfW4tRrJie81RQF1tuu7KmHdw&oe=6331D7F9"
           alt="Meta logo">
       </nav>
-      <nav>
+      <nav class="lg:hidden">
         <i class="bi bi-bag text-xl"></i>
       </nav>
-      <nav class="hidden">
-        <ul class="flex">
+      <nav class="hidden lg:block">
+        <ul class="flex gap-8 items-center">
           <img class="w-[69px]"
             src="https://scontent.fnbo1-1.fna.fbcdn.net/v/t39.8562-6/252294889_575082167077436_6034106545912333281_n.svg/meta-logo-primary_standardsize.svg?_nc_cat=1&ccb=1-7&_nc_sid=ad8a9d&_nc_ohc=GKJNnMmdfbUAX9ZZWZK&_nc_ht=scontent.fnbo1-1.fna&oh=00_AT_fHzGF-EfZMDZwDLuVbYfW4tRrJie81RQF1tuu7KmHdw&oe=6331D7F9"
             alt="Meta logo">
@@ -35,10 +36,10 @@
           <li>Build With Us</li>
         </ul>
       </nav>
-      <nav class="hidden">
-        <ul class="flex">
+      <nav class="hidden lg:block">
+        <ul class="flex items-center gap-8">
           <li>Support</li>
-          <li>Icon</li>
+          <li><i class="bi bi-bag text-xl"></i></li>
         </ul>
       </nav>
 
@@ -48,7 +49,8 @@
     <section>
       <div class="px-5">
         <div class="mt-[70px] flex flex-col items-center gap-8">
-          <h1 class="text-center text-[36px] leading-[44px]">Bringing people closer every day</h1>
+          <h1 class="text-center text-[36px] leading-[44px] max-w-[544px] lg:text-[48px] lg:leading-[60px]">Bringing
+            people closer every day</h1>
           <div class="flex gap-4 items-center">
             <i class="bi bi-arrow-right-circle text-2xl text-gray-400"></i>
             <a href="" class="font-bold">Learn about our mission</a>
@@ -64,18 +66,10 @@
         <div>
           <img class="w-[160px]" src="./images/meta_logo.png" alt="meta logo">
         </div>
-        <h2 class="text-[24px] leading-[28px] max-w-[400px] text-center">
+        <h2
+          class="text-center text-[24px] lg:text-[36px] leading-[28px] max-w-[400px] lg:max-w-[760px] lg:leading-[120%]">
           Meta builds technologies that help people connect, find communities and grow businesses.
         </h2>
-        <!-- <p>
-          We’re moving beyond 2D screens and into immersive experiences in the metaverse, helping create the next
-          evolution of
-          social technology.
-        </p>
-        <div>
-          <p>icon goes here</p>
-          <a href="">Experience the metaverse</a>
-        </div> -->
       </div>
     </section>
     <section>
@@ -181,67 +175,107 @@
       </div>
     </section>
     <section>
-      <div>
-        <h4>More about the metaverse</h4>
-        <div>
+      <div class="mx-6 lg:justify-center flex gap-12 overflow-x-auto pb-4">
+        <div class="w-[300px] flex flex-col gap-4 flex-shrink-0">
           <div>
-            <img src="" alt="">
-            <h5>What is metaverse?</h5>
-            <p>icon goes here</p>
+            <img src="./images/grid_image_1.jpg" class="w-full" alt="">
           </div>
-          <div>
-            <img src="" alt="">
-            <h5>What is metaverse?</h5>
-            <p>icon goes here</p>
+          <a class="text-[18px] leading-[27px] mr-3">Introducing Community Chats: Connecting Your Community in Real
+            Time on Messenger and Facebook
+          </a>
+          <p>Community Chats blend Messenger and Facebook Groups to let people connect when, where and how they
+            want.
+          </p>
+          <div class="flex gap-4 items-center">
+            <i class="bi bi-arrow-right-circle text-2xl text-gray-400"></i>
+            <a href="" class="font-bold">Learn more</a>
           </div>
         </div>
-      </div>
-    </section>
-    <section>
-      <div>
-        <div>
-          <img src="" alt="">
-          <h4>Introducing Community Chats: Connecting Your Community in Real Time on Messenger and Facebook
-          </h4>
-          <p>Community Chats blend Messenger and Facebook Groups to let people connect when, where and how they want.
-          </p>
+        <div class="w-[300px] flex flex-col gap-4 flex-shrink-0">
           <div>
-            <p>icon goes here</p>
-            <h4>Read more</h4>
+            <img src="./images/grid_image_1.jpg" class="w-full" alt="">
+          </div>
+          <a class="text-[18px] leading-[27px] mr-3">Introducing Community Chats: Connecting Your Community in Real
+            Time on Messenger and Facebook
+          </a>
+          <p>Community Chats blend Messenger and Facebook Groups to let people connect when, where and how they
+            want.
+          </p>
+          <div class="flex gap-4 items-center">
+            <i class="bi bi-arrow-right-circle text-2xl text-gray-400"></i>
+            <a href="" class="font-bold">Learn more</a>
           </div>
         </div>
-        <div>
-          <img src="" alt="">
-          <h4>Introducing Community Chats: Connecting Your Community in Real Time on Messenger and Facebook
-          </h4>
-          <p>Community Chats blend Messenger and Facebook Groups to let people connect when, where and how they want.
-          </p>
+        <div class="w-[300px] flex flex-col gap-4 flex-shrink-0">
           <div>
-            <p>icon goes here</p>
-            <h4>Read more</h4>
+            <img src="./images/grid_image_1.jpg" class="w-full" alt="">
           </div>
-        </div>
-        <div>
-          <img src="" alt="">
-          <h4>Introducing Community Chats: Connecting Your Community in Real Time on Messenger and Facebook
-          </h4>
-          <p>Community Chats blend Messenger and Facebook Groups to let people connect when, where and how they want.
+          <a class="text-[18px] leading-[27px] mr-3">Introducing Community Chats: Connecting Your Community in Real
+            Time on Messenger and Facebook
+          </a>
+          <p>Community Chats blend Messenger and Facebook Groups to let people connect when, where and how they
+            want.
           </p>
-          <div>
-            <p>icon goes here</p>
-            <h4>Read more</h4>
+          <div class="flex gap-4 items-center">
+            <i class="bi bi-arrow-right-circle text-2xl text-gray-400"></i>
+            <a href="" class="font-bold">Learn more</a>
           </div>
         </div>
       </div>
     </section>
     <footer>
-      <div></div>
-      <div>
-        <ul>
-          <li></li>
-        </ul>
+      <div class="px-5 pt-[70px] bg-[#f1f4f7] mt-[60px]">
+        <div class="flex flex-col gap-4">
+          <div><img
+              src="https://scontent.fnbo1-1.fna.fbcdn.net/v/t39.8562-6/250802775_421829349379303_5128561417639041188_n.png?_nc_cat=1&ccb=1-7&_nc_sid=6825c5&_nc_ohc=swu6-sIpJLsAX8NEns0&_nc_ht=scontent.fnbo1-1.fna&oh=00_AT_H2g7qbfpadeGVKkTI-5NzEaE42EDWyvfeqize4cv72Q&oe=6336E4B9"
+              class="w-[100px]" alt=""></div>
+          <p class="mt-[32px]">Follow us</p>
+          <div class="flex gap-6">
+            <img src="./images/social_icon.png" class="w-6" alt="">
+            <img src="./images/social_icon.png" class="w-6" alt="">
+            <img src="./images/social_icon.png" class="w-6" alt="">
+            <img src="./images/social_icon.png" class="w-6" alt="">
+            <img src="./images/social_icon.png" class="w-6" alt="">
+          </div>
+        </div>
+        <div class="mt-12 flex flex-col gap-4">
+          <div class="">
+            <h2>Virtual reality</h2>
+          </div>
+          <div class="border"></div>
+          <div class="">
+            <h2>Virtual reality</h2>
+          </div>
+          <div class="border"></div>
+          <div class="">
+            <h2>Virtual reality</h2>
+          </div>
+          <div class="border"></div>
+          <div class="">
+            <h2>Virtual reality</h2>
+          </div>
+          <div class="border"></div>
+          <div class="">
+            <h2>Virtual reality</h2>
+          </div>
+          <div class="border"></div>
+        </div>
+        <div class="mt-[64px] flex gap-4">
+          <a href="">Community standards</a>
+          <p>|</p>
+          <a href="">Privacy policy</a>
+        </div>
+        <div class="mt-[22px] flex gap-4">
+          <a href="">Terms</a>
+          <p>|</p>
+          <a href="">Cookie policy</a>
+        </div>
+        <div class="border mt-4"></div>
+        <div class="mt-[50px] pb-[40px]">
+          <p>Language English (US)</p>
+        </div>
       </div>
-      <div></div>
+
     </footer>
   </main>
 </body>

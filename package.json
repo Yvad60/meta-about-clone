@@ -10,7 +10,8 @@
   "version": "1.0.0",
   "main": "postcss.config.js",
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "build:css": "npx tailwindcss -i ./styles/index.css -o ./styles/output.css"
   },
   "repository": {
     "type": "git",
